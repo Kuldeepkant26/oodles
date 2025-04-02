@@ -1,0 +1,90 @@
+.section2 {
+    padding: 20px 6rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Marquee container to hide overflow */
+.marquee {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+/* Inner container with duplicated images */
+.marquee__inner {
+    display: flex;
+    width: max-content;
+    animation: marquee 15s linear infinite;
+}
+
+/* Container for each image to ensure consistent dimensions (increased by 1.2x) */
+.image-container {
+    width: 120px;  /* originally 100px */
+    height: 48px;  /* originally 40px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 48px;  /* originally 40px */
+}
+
+/* Image styling to fill the container without distortion */
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Pause animation on hover (optional) */
+.marquee:hover .marquee__inner {
+    animation-play-state: paused;
+}
+
+.section2 h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #4E5B82;
+}
+
+/* Keyframes for infinite horizontal scrolling */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .image-container {
+        width: 96px;   /* 80px * 1.2 */
+        height: 42px;  /* 35px * 1.2 */
+        margin-right: 24px; /* 20px * 1.2 */
+    }
+    .section2 {
+        padding: 20px 3rem;
+        overflow: hidden;
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 480px) {
+    .section2 {
+        padding: 20px 0rem;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .section2 h2 {
+        font-size: 1.2rem;
+    }
+    .image-container {
+        width: 84px;   /* 70px * 1.2 */
+        height: 36px;  /* 30px * 1.2 */
+        margin-right: 18px; /* 15px * 1.2 */
+    }
+}

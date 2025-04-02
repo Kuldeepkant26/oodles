@@ -1,0 +1,202 @@
+.nav {
+    width: 100%;
+    background-color: white;
+    padding: 0.8rem 3rem;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.nav .left {
+    display: flex;
+    align-items: center;
+
+    gap: 1.5rem;
+
+}
+
+.nav .left .logo {
+    height: 20px;
+    object-fit: cover;
+}
+
+.nav .left .lmenu {
+
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.nav .left .lmenu p {
+    cursor: pointer;
+    position: relative;
+    transition: all 1s;
+    color: #4E5B82;
+}
+
+.nav .left .lmenu p::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    /* Start with no width */
+    height: 2px;
+    /* Adjust for underline thickness */
+    background-color: black;
+    /* Use background instead of border for underline */
+    transition: width 0.3s;
+}
+
+.nav .left .lmenu p:hover::before {
+    width: 100%;
+}
+
+
+.nav .right {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav .right .rac {
+    background: #2D407A;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* width: 200px; */
+    border-radius: 5px;
+    padding: 5px;
+    gap: 5px;
+
+}
+
+.nav .right .rac img {
+    height: 20px;
+
+}
+
+.nav .right .rac p {
+    font-size: 14px;
+
+}
+
+.nav .right .clint-login {
+    border: 1px solid #2D407A;
+    color: #2D407A;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 5px;
+
+}
+
+.nav .right .clint-login img {
+    height: 20px;
+}
+
+.nav .small-device-menu {
+    display: none;
+}
+
+#menu-open-btn {
+    font-size: 1.6rem;
+    color: #2D407A;
+    display: none;
+}
+
+#services {
+    position: relative;
+    
+}
+#services:hover #services-cont {
+  display: flex;
+
+}
+
+#services #services-cont {
+    width: 240px;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #d9d9d9,
+        0px 0px 0px #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    display: none;
+    
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+#services #services-cont h5 {
+    color: #2D407A;
+}
+#services #services-cont p{
+    color:#4E5B82;
+}
+
+@media (max-width:1000px) {
+    .nav .left .lmenu {
+        display: none;
+    }
+
+    .nav .right {
+        display: none;
+    }
+
+    #menu-open-btn {
+        display: block;
+    }
+
+    .nav .small-device-menu {
+        width: 250px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+
+        background-color: #2D407A;
+        color: white;
+        right: -250px;
+        transition: all;
+        transition-duration: 0.5s;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        overflow-y: auto;
+        padding-bottom: 1rem;
+
+    }
+
+    .nav .small-device-menu .close-menu-cont {
+        width: 100%;
+
+        font-size: 1.6rem;
+        padding: 0.7rem 0.5rem;
+    }
+
+    .nav .small-device-menu .list {
+
+        padding: 0.5rem;
+
+    }
+
+    .nav .small-device-menu .list p {
+        border-bottom: 1px solid white;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    .nav .left .logo {
+        height: 25px;
+        object-fit: cover;
+    }
+
+}

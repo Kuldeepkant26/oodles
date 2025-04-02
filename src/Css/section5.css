@@ -1,0 +1,156 @@
+.section5 {
+    background: #f5f7fb;
+    display: flex;
+    padding: 2rem 4rem;
+    gap: 8vw;
+    justify-content: space-between;
+
+}
+
+
+.section5 .left {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section5 .left h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #2D407A;
+}
+
+.section5 .left h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #4E5B82;
+
+
+
+}
+
+.section5 .bottom {
+    width: 100%;
+
+    padding-left: 3vw;
+    margin-top: 2rem;
+}
+
+.section5 .bottom i {
+    color: #64A7E6;
+    margin-right: 0.5rem;
+
+}
+
+.section5 .bottom p {
+
+    color: #4E5B82;
+
+}
+
+.section5 .right {
+    display: flex;
+    gap: 2rem;
+}
+
+.section5 .right .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.section5 .right .card .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+
+    color: white;
+    padding: 1rem;
+    padding-top: 50%;
+    background-color: #0000007d;
+    opacity: 0;
+    transition: all;
+    transition-duration: 0.8s;
+    border-radius: 12px;
+   
+}
+
+.section5 .right .card:hover .overlay {
+    opacity: 1;
+}
+
+
+.section5 .right .card .overlay p {
+    margin-top: 1rem;
+    font-size: 15px;
+    line-height: 110%;
+}
+
+.section5 .right .card .overlay i {
+    color: #64A7E6;
+
+}
+
+@media (max-width:850px) {
+    .section5 {
+        flex-direction: column;
+    }
+
+    .section5 .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .section5 .left h2 {
+        text-align: center;
+
+    }
+
+    .section5 .bottom {
+
+        font-size: 15px;
+    }
+
+    .section5 .right .card .overlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+
+        color: white;
+        padding: 1rem;
+        padding-top: 60%;
+        background-color: #00000047;
+
+        transition: all;
+        transition-duration: 0.8s;
+        opacity: 1;
+    }
+
+
+
+
+}
+
+@media (max-width:600px) {
+    .section5 {
+        background: #f5f7fb;
+        display: flex;
+        padding: 2rem 2rem;
+        gap: 8vw;
+        justify-content: space-between;
+
+    }
+}
+
+@media (max-width:500px) {
+    .section5 .right {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}

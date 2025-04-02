@@ -1,0 +1,90 @@
+.section3 {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vw;
+    padding: 2rem;
+}
+
+.section3 h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #2D407A;
+}
+
+.section3 h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #4E5B82;
+    text-align: center;
+
+}
+
+.section3 .cards {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.section3 .card {
+    width: 250px;
+    height: 290px;
+    background: #f5f7fb;
+    padding: 1rem 15px;
+    border: 10px;
+    border-radius: 10px;
+
+
+}
+
+.section3 .card h3 {
+    color: #2D407A;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.section3 .card p {
+    margin-top: 0.5rem;
+    color: #4E5B82;
+    font-size: 0.9rem;
+}
+
+.section3 .card button {
+    background-color: white;
+    color: #2D407A;
+    font-size: 0.87rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.section3 .card button .arrow-box {
+    height: 1rem;
+    width: 1rem;
+    background-color: #2D407A;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:450px) {
+    .section3 .card {
+        width: 100%;
+        height: fit-content;
+
+    }
+}
