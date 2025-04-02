@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import girl from '../assets/girl.png'
 import boy from '../assets/boy.png'
-import '../Css/Section5.css'
+import '../Css/section5.css'
 function Section5() {
     const [overlay1, setOverlay1] = useState(false)
     const [overlay2, setOverlay2] = useState(false)
