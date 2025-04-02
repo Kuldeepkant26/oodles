@@ -11,8 +11,8 @@ function Section1() {
                 <h1>Expert Accounting Solutions For Smarter Business Decisions </h1>
                 <h2>Your Accounting Partner: Tax Solutions,Strategic Advice, <br /> and BookKeeping</h2>
                 <div className="btns">
-                    <button className='btn1'>Request a Consultation <div className="arrow-box"><i class="ri-arrow-right-up-line"></i></div></button>
-                    <button className='btn2'>Get in Touch <div className="arrow-box"><i class="ri-arrow-right-up-line"></i></div></button>
+                    <button className='btn1 cursor-pointer'>Request a Consultation <div className="arrow-box"><i class="ri-arrow-right-up-line"></i></div></button>
+                    <button className='btn2 cursor-pointer'>Get in Touch <div className="arrow-box"><i class="ri-arrow-right-up-line"></i></div></button>
                 </div>
 
             </div>
