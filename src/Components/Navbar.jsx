@@ -35,7 +35,7 @@ function Navbar() {
             </div>
             <div className="right">
                 <img src={navlanguage} alt="" className='cursor-pointer' />
-                <div className='rac cursor-pointer'><img src={navcalander} alt='calendar' /> <p>Request a Consultation</p></div>
+                <div className='rac cursor-pointer'><i class="ri-calendar-2-line"></i><p>Request a Consultation</p></div>
                 <div className='clint-login cursor-pointer'> <img src={lock_person} alt="lp" /> <p>Client Login</p></div>
             </div>
             <i id='menu-open-btn' class="ri-menu-3-line cursor-pointer" onClick={handelMenuOpen}></i>
